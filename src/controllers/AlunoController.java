@@ -21,12 +21,16 @@ public class AlunoController {
                 Aluno alunoTemp = new Aluno(IDURI, IDURI);
                 double pontosExtras = 0;
                 for (ProblemaResolvido pro : DataCapture.getProblemasResolvidos(IDURI)) {
-                    int lvl = Integer.parseInt(pro.getLevel());
-                    if (lvl >= 2) {
-                        pontosExtras += 0.05;
-                    } else {
-                        pontosExtras += 0.02;
+                    int lvl;
+                    if (pro.getLevel() != null) {
+                        lvl = Integer.parseInt(pro.getLevel());
+                        if (lvl >= 2) {
+                            pontosExtras += 0.05;
+                        } else {
+                            pontosExtras += 0.02;
+                        }
                     }
+
                     alunoTemp.addProblemas(pro);
                 }
                 alunoTemp.setPontosExtras(pontosExtras);
