@@ -94,8 +94,8 @@ public class DataCapture {
                 sb.append(line);
                 if (sb.length() >= 40) {
                     System.out.println(line);
-                    System.out.println(line.substring(8, 33));
-                    if (sb.substring(8, 33).equals("<div class=\"pb-username\">")) {
+                    System.out.println(line.substring(0, 27));
+                    if (sb.substring(0, 27).equals("		<div class=\"pb-username\">")) {
                         return NodeParser.Parser(line);
                     }
                 }

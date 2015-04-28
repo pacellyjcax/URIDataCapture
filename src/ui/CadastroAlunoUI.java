@@ -213,19 +213,22 @@ public class CadastroAlunoUI extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 420, 40));
 
+        jLabel20.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
         jLabel20.setText("Nome:");
 
+        jLabel23.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
         jLabel23.setText("ID URI");
 
+        jLabel25.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
         jLabel25.setText("Pontos Extras:");
 
-        nomeShowLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        nomeShowLabel.setFont(new java.awt.Font("Microsoft YaHei", 1, 24)); // NOI18N
         nomeShowLabel.setText("Nome:");
 
-        idURIShowLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        idURIShowLabel.setFont(new java.awt.Font("Microsoft YaHei", 1, 24)); // NOI18N
         idURIShowLabel.setText("Bairro:");
 
-        pontosExtrasShowLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        pontosExtrasShowLabel.setFont(new java.awt.Font("Microsoft YaHei", 1, 36)); // NOI18N
         pontosExtrasShowLabel.setText("Bairro:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -246,7 +249,7 @@ public class CadastroAlunoUI extends javax.swing.JFrame {
                                 .addComponent(jLabel20)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(nomeShowLabel)))
-                        .addContainerGap(328, Short.MAX_VALUE))
+                        .addContainerGap(430, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel23)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -268,10 +271,10 @@ public class CadastroAlunoUI extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pontosExtrasShowLabel)
                     .addComponent(jLabel25))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 500, -1));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 700, 240));
 
         dadosjTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
